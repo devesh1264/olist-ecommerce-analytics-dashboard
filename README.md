@@ -42,10 +42,6 @@ The raw CSVs were loaded into PostgreSQL and modeled into a star schema (fact ta
 - `olist-ecommerce-analytics-dashboard.pbix` — the Power BI report (open in Power BI Desktop; DirectQuery connection details will need to point at your own PostgreSQL instance)
 - `screenshots/` — page-by-page exports of the dashboard (see below)
 
-## Screenshots
-
-See the `screenshots/` folder for a full page-by-page walkthrough, or the images below (add these once exported from Power BI: File → Export → PDF, then convert each page to PNG, or use Snipping Tool per page).
-
 ## Author
 
 Devesh Rathod 
