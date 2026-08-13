@@ -8,19 +8,29 @@ A 9-page Power BI dashboard analyzing ~99K orders from the Brazilian e-commerce 
 
 The raw CSVs were loaded into PostgreSQL and modeled into a star schema (fact table + date dimension) before being connected to Power BI via DirectQuery.
 
+## Preview
+
+![Overview](olist-ecommerce-analytics-dashboard-1.png)
+![Sales Trends](olist-ecommerce-analytics-dashboard-2.png)
+![Category & Product Analysis](olist-ecommerce-analytics-dashboard-3.png)
+
+See the full page-by-page walkthrough below, or view the [full PDF export](https://github.com/devesh1264/olist-ecommerce-analytics-dashboard/blob/main/olist-ecommerce-analytics-dashboard.pdf) for all 9 pages at once.
+
+**[Download the .pbix](https://github.com/devesh1264/olist-ecommerce-analytics-dashboard/raw/main/olist-ecommerce-analytics-dashboard.pbix)** to open the live report in Power BI Desktop.
+
 ## Dashboard Pages
 
-| Page | What it covers |
-|---|---|
-| **Overview (Executive Dashboard)** | Total revenue, orders, customers, AOV, on-time delivery rate, revenue trend, top categories, order status split, top states by revenue |
-| **Sales Trends** | Revenue vs. last year, rolling 30-day revenue, YTD revenue, category × year performance |
-| **Category & Product Analysis** | AOV vs. orders by category, top categories by rating, revenue share by category, full category performance table |
-| **Customer Geography** | Top states/cities by revenue, state × category performance |
-| **Delivery & Logistics** | Late orders, on-time delivery rate, delivery days by category, late order rate by state |
-| **Customer Reviews & Ratings** | Average rating, positive/negative review %, rating distribution, rating by on-time vs. late delivery, rating by category |
-| **Payment Analysis** | Payment method distribution, average installments, payment value trend, payment summary |
-| **Seller Performance** | Total sellers, revenue per seller, top sellers, revenue by seller state, seller × category performance |
-| **Drillthrough (Category Details)** | Right-click drillthrough from any category to a dedicated detail page — revenue trend by year, customer state breakdown, and KPI cards scoped to that category |
+| Page | Screenshot | What it covers |
+|---|---|---|
+| Overview (Executive Dashboard) | `olist-ecommerce-analytics-dashboard-1.png` | Total revenue, orders, customers, AOV, on-time delivery rate, revenue trend, top categories, order status split, top states by revenue |
+| Sales Trends | `olist-ecommerce-analytics-dashboard-2.png` | Revenue vs. last year, rolling 30-day revenue, YTD revenue, category × year performance |
+| Category & Product Analysis | `olist-ecommerce-analytics-dashboard-3.png` | AOV vs. orders by category, top categories by rating, revenue share by category, full category performance table |
+| Customer Geography | `olist-ecommerce-analytics-dashboard-4.png` | Top states/cities by revenue, state × category performance |
+| Delivery & Logistics | `olist-ecommerce-analytics-dashboard-5.png` | Late orders, on-time delivery rate, delivery days by category, late order rate by state |
+| Customer Reviews & Ratings | `olist-ecommerce-analytics-dashboard-6.png` | Average rating, positive/negative review %, rating distribution, rating by on-time vs. late delivery, rating by category |
+| Payment Analysis | `olist-ecommerce-analytics-dashboard-7.png` | Payment method distribution, average installments, payment value trend, payment summary |
+| Seller Performance | `olist-ecommerce-analytics-dashboard-8.png` | Total sellers, revenue per seller, top sellers, revenue by seller state, seller × category performance |
+| Drillthrough (Category Details) | `olist-ecommerce-analytics-dashboard-9.png` | Right-click drillthrough from any category to a dedicated detail page — revenue trend by year, customer state breakdown, and KPI cards scoped to that category |
 
 ## Key Metrics
 
@@ -39,10 +49,17 @@ The raw CSVs were loaded into PostgreSQL and modeled into a star schema (fact ta
 
 ## Files
 
-- `olist-ecommerce-analytics-dashboard.pbix` — the Power BI report (open in Power BI Desktop; DirectQuery connection details will need to point at your own PostgreSQL instance)
-- `olist-ecommerce-analytics-dashboard.pdf` - the page-by-page PDF report of Power BI file
-- `screenshots/` — page-by-page exports of the dashboard (see below)
+- [`olist-ecommerce-analytics-dashboard.pbix`](https://github.com/devesh1264/olist-ecommerce-analytics-dashboard/raw/main/olist-ecommerce-analytics-dashboard.pbix) — the Power BI report (open in Power BI Desktop; DirectQuery connection details will need to point at your own PostgreSQL instance)
+- [`olist-ecommerce-analytics-dashboard.pdf`](https://github.com/devesh1264/olist-ecommerce-analytics-dashboard/blob/main/olist-ecommerce-analytics-dashboard.pdf) — full page-by-page PDF export of the report
+- `olist-ecommerce-analytics-dashboard-1.png` through `-9.png` — individual page screenshots, in dashboard order (see table above)
+
+## Setup
+
+1. Restore the Olist CSVs into a PostgreSQL database.
+2. Open `olist-ecommerce-analytics-dashboard.pbix` in Power BI Desktop.
+3. Update the DirectQuery connection (Transform Data → Data Source Settings) to point at your PostgreSQL instance.
+4. Refresh.
 
 ## Author
 
-Devesh Rathod 
+Devesh Rathod
