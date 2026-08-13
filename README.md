@@ -1,6 +1,6 @@
 # Olist E-Commerce Analytics Dashboard
 
-A 9-page Power BI dashboard analyzing ~99K orders from the Brazilian e-commerce marketplace Olist — revenue trends, category and product performance, customer geography, delivery/logistics, reviews, payments, and seller performance, built on a PostgreSQL data model with DirectQuery and DAX.
+An end-to-end BI project built on Olist's real-world Brazilian e-commerce data: 98,666 orders and R$14.2M in revenue, modeled from raw relational tables into a PostgreSQL star schema and served live to Power BI via DirectQuery. The 9-page report covers revenue trends, category and product performance, customer geography, delivery logistics, review sentiment, payments, and seller analytics — driven by custom DAX measures (YoY growth, rolling 30-day revenue, on-time delivery rate, review sentiment split) and a category-level drillthrough page.
 
 ## Dataset
 
